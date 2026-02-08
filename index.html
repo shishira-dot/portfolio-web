@@ -2,140 +2,198 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
 
-    <!-- Link to external CSS -->
-    <link rel="stylesheet" href="./style.css" />
+    <!-- box icons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 
-    <!-- FontAwesome CDN for icons -->
-    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <!-- custom css -->
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <!-- Navigation Bar -->
-    <header>
-        <nav>
-            <ul class="navbar">
-                <li><a href="#home" class="active">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#education">Education</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
+
+    <!-- header design -->
+    <header class="header">
+        <a href="#" class="logo">Portfolio.</a>
+
+        <i class='bx bx-menu' id="menu-icon"></i>
+
+        <nav class="navbar">
+            <a href="#home" class="active">Home</a>
+            <a href="#about">About</a>
+            <a href="#services">Services</a>
+            <a href="#portfolio">Portfolio</a>
+            <a href="#contact">Contact</a>
         </nav>
     </header>
 
-    <!-- Social Sidebar -->
-    <aside class="sidebar">
-        <a href="#"><i class="fab fa-linkedin"></i></a>
-        <a href="#"><i class="fab fa-github"></i></a>
-        <a href="#"><i class="fab fa-xing"></i></a>
-        <a href="#"><i class="fab fa-facebook"></i></a>
-        <a href="#"><i class="fab fa-instagram"></i></a>
-    </aside>
+    <!-- home section design -->
+    <section class="home" id="home">
+        <div class="home-content">
+            <h3>Hello, It's Me</h3>
+            <h1>Shishir Khan</h1>
+            <h3>And I'm a <span class="multiple-text"></span></h3>
+            <p>Hi! I’m Shishir Khan, a passionate Frontend Developer from Bangladesh.</p>
+            <div class="social-media">
+                <a href="#"><i class='bx bxl-facebook'></i></a>
+                <a href="#"><i class='bx bxl-twitter'></i></a>
+                <a href="#"><i class='bx bxl-instagram-alt'></i></a>
+                <a href="#"><i class='bx bxl-linkedin'></i></a>
+            </div>
+            <a href="#" class="btn">Download CV</a>
+        </div>
 
-    <!-- Sections -->
-
-    <section id="home" class="section">
-        <h1>Welcome to My Portfolio</h1>
-        <p>Hi, I'm a passionate Web Developer who creates beautiful and performant web experiences.</p>
+        <div class="home-img">
+            <img src="images/shishir.jpeg" alt="Shishir">
+        </div>
     </section>
 
-    <section id="about" class="section">
-        <h2>About Me</h2>
-        <p>I'm a dedicated web developer with over 5 years of experience in building responsive, high-performance
-            websites.<br />
-            My expertise includes HTML, CSS, JavaScript, and modern frameworks like React.</p>
+    <!-- about section design -->
+    <section class="about" id="about">
+        <div class="about-content">
+            <h2 class="heading">About <span>Me</span></h2>
+            <h3>Frontend Developer!</h3>
+            <p>Hi! I’m Shishir Khan, a 23-year-old Computer Science student from Bangladesh, currently pursuing my Bachelor’s degree at
+            Daffodil International University.
+            I am passionate about coding, web development, and creating user-friendly websites.
+            I specialize in HTML, CSS, and JavaScript, and I enjoy turning ideas into real projects.
+            In my free time, I love exploring new technologies, solving programming challenges, and sharing knowledge with others.
+            </p>
+            <a href="#" class="btn">Read More</a>
+        </div>
     </section>
 
-    <section id="education" class="section">
-        <h2>Education</h2>
+    <!-- services section design -->
+    <section class="services" id="services">
+        <h2 class="heading">Our <span>Services</span></h2>
 
-        <!-- Image files must be placed inside 'images' folder -->
-        <!-- Example: images/2.jpg and images/3.jpg -->
+        <div class="services-container">
+            <div class="services-box">
+                <i class='bx bx-code-alt'></i>
+                <h3>Web Development</h3>
+                <p>I create responsive and modern websites using HTML,CSS,and JavaScript.
+                I focus on user-friendly design on the web.</p>
+                <a href="#" class="btn">Read More</a>
+            </div>
 
-        <div class="edu-card">
-            <img src="images/2.jpeg" alt="Graduation" />
-            <div>
-                <h3>Bachelor of Science in Computer Science</h3>
-                <p>Shanto Mariam University of Creative Technology<br /></p>
+            <div class="services-box">
+                <i class='bx bxs-paint'></i>
+                <h3>Graphic Design</h3>
+                <p>I create visually appealing designs for logos, banners, social media posts, and other digital graphics.
+                </p>
+                <a href="#" class="btn">Read More</a>
+            </div>
+
+            <div class="services-box">
+                <i class='bx bx-bar-chart-alt'></i>
+                <h3>Digital Marketing</h3>
+                <p>I help businesses grow online by creating effective digital marketing strategies.</p>
+                <a href="#" class="btn">Read More</a>
             </div>
         </div>
-
     </section>
 
-    <section id="skills" class="section">
-        <h2>Skills</h2>
-        <ul class="skills-list">
-            <li>HTML5</li>
-            <li>CSS3</li>
-            <li>JavaScript</li>
-            <li>React.js</li>
-            <li>Responsive Design</li>
-            <li>Git</li>
-        </ul>
-    </section>
+    <!-- portfolio section design -->
+    <section class="portfolio" id="portfolio">
+        <h2 class="heading">Latest <span>Project</span></h2>
 
-    <section id="experience" class="section">
-        <h2>Experience</h2>
-        <div class="exp-item">
-            <h3>Frontend Developer at Tech Solutions</h3>
-            <p>2020 - Present</p>
-            <p>Built multiple React websites, improved UI/UX, ensured cross-browser compatibility.</p>
-        </div>
-        <div class="exp-item">
-            <h3>Intern at WebStudio</h3>
-            <p>2019 - 2020</p>
-            <p>Developed responsive pages, fixed bugs, and learned best frontend practices.</p>
-        </div>
-    </section>
-
-    <section id="projects" class="section">
-        <h2>Projects</h2>
-
-        <!-- Example project with image inside images folder -->
-        <div class="project">
-            <h3>Personal Portfolio Website</h3>
-            <img src="images/portfolio.png" alt="Portfolio Screenshot" />
-            <p>Responsive site built using HTML, CSS, and JS to showcase my work.</p>
-        </div>
-        <div class="project">
-            <h3>Task Manager App</h3>
-            <p>Built with React and Firebase for real-time tasks and authentication.</p>
-        </div>
-    </section>
-
-    <section id="contact" class="section contact">
-        <h2>Contact Me</h2>
-        <div class="contact-box">
-            <div class="contact-info">
-                <p><i class="fas fa-envelope"></i> shishirk280@gmail.com</p>
-                <p><i class="fas fa-phone"></i> 01718188601</p>
-                <p><i class="fas fa-map-marker-alt"></i> Dhaka, Bangladesh</p>
+        <div class="portfolio-container">
+            <div class="portfolio-box">
+                <img src="images/portfolio1.jpg" alt="">
+                <div class="portfolio-layer">
+                    <h4>Web Design</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, ipsam est.</p>
+                    <a href="#"><i class='bx bx-link-external'></i></a>
+                </div>
             </div>
-            <form class="contact-form">
-                <input type="text" placeholder="Your Name" required />
-                <input type="email" placeholder="Your Email" required />
-                <textarea placeholder="Your Message" required></textarea>
-                <button type="submit">Send</button>
-            </form>
+
+            <div class="portfolio-box">
+                <img src="images/portfolio2.jpg" alt="">
+                <div class="portfolio-layer">
+                    <h4>Web Design</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, ipsam est.</p>
+                    <a href="#"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+
+            <div class="portfolio-box">
+                <img src="images/portfolio3.jpg" alt="">
+                <div class="portfolio-layer">
+                    <h4>Web Design</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, ipsam est.</p>
+                    <a href="#"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+
+            <div class="portfolio-box">
+                <img src="images/portfolio4.jpg" alt="">
+                <div class="portfolio-layer">
+                    <h4>Web Design</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, ipsam est.</p>
+                    <a href="#"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+
+            <div class="portfolio-box">
+                <img src="images/portfolio5.jpg" alt="">
+                <div class="portfolio-layer">
+                    <h4>Web Design</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, ipsam est.</p>
+                    <a href="#"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+
+            <div class="portfolio-box">
+                <img src="images/portfolio6.jpg" alt="">
+                <div class="portfolio-layer">
+                    <h4>Web Design</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, ipsam est.</p>
+                    <a href="#"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
         </div>
     </section>
 
-    <!-- Scroll to Top Button -->
-    <button class="scroll-top">↑</button>
+    <!-- contact section design -->
+    <section class="contact" id="contact">
+        <h2 class="heading">Contact <span>Me!</span></h2>
 
-    <!-- Link to external JavaScript -->
-    <script src="./script.js"></script>
+        <form action="#">
+            <div class="input-box">
+                <input type="text" placeholder="Full Name">
+                <input type="email" placeholder="Email Address">
+            </div>
+            <div class="input-box">
+                <input type="number" placeholder="Mobile Number">
+                <input type="text" placeholder="Email Subject">
+            </div>
+            <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
+            <input type="submit" value="Send Message" class="btn">
+        </form>
+    </section>
 
-    <!-- Footer -->
+    <!-- footer design -->
     <footer class="footer">
-        <p>&copy; 2025 Shishir. All rights reserved.</p>
+        <div class="footer-text">
+            <p>Copyright &copy; 2024 by Shishir | All Rights Reserved.</p>
+        </div>
+
+        <div class="footer-iconTap">
+            <a href="#home"><i class='bx bx-up-arrow-alt'></i></a>
+        </div>
     </footer>
+
+    <!-- scroll reveal -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!-- typed js -->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+    <!-- custom js -->
+    <script src="index.js"></script>
 
 </body>
 
